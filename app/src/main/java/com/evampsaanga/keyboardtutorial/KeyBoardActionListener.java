@@ -9,6 +9,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
+import android.widget.Toast;
 
 /**
  * Created by root on 11/25/2015.
@@ -93,7 +94,9 @@ public class KeyBoardActionListener implements KeyboardView.OnKeyboardActionList
 
         }else if(primaryCode==DisableKey){
 
-        } else{ // insert character
+        }else if(primaryCode==66001){
+            Toast.makeText(targetActivity,"Your Next Action Here",Toast.LENGTH_SHORT).show();
+        }  else{ // insert character
             editable.insert(start, Character.toString((char) primaryCode));
         }
     }
