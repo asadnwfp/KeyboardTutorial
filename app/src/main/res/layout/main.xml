@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/et_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_text_simple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionNext"
+            android:privateImeOptions="@string/label_send_key"/>
+    </LinearLayout>
+
+    <com.evampsaanga.keyboardtutorial.MyKeyBoard
+        android:id="@+id/kbd_txt_keyboard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@color/kbdBackGround"
+        android:keyPreviewOffset="12dp"
+        android:keyTextColor="@color/kbdText"
+        android:keyTextSize="35dp"
+        android:visibility="gone" />
+    <com.evampsaanga.keyboardtutorial.MyKeyBoard
+        android:id="@+id/kbd_num_keyboard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@color/kbdBackGround"
+        android:keyPreviewOffset="12dp"
+        android:keyTextColor="@color/kbdText"
+        android:keyTextSize="35dp"
+        android:visibility="gone" />
+    <com.evampsaanga.keyboardtutorial.softkeyboard.LatinKeyboardView
+        android:id="@+id/kbd_global_keyboard"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:keyBackground="@color/kbdBackGround"
+        android:keyPreviewOffset="12dp"
+        android:keyTextColor="@color/kbdText"
+        android:keyTextSize="35dp"
+        android:visibility="gone" />
+</RelativeLayout>
